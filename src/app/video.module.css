@@ -1,0 +1,137 @@
+.body {
+    color: white;
+    background: black;
+    font-family: RalewayRegular;
+}
+
+.subtitle{
+  font-weight: bold;
+}
+
+.genreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирует блоки категорий по горизонтали */
+  padding: 1rem;
+
+  float: right;
+}
+
+.genreBlock {
+  width: 100%;
+  max-width: 2000px; /* Ограничивает ширину каждого блока */
+  text-align: center; /* Центрирует заголовок категории */
+  margin-bottom: 23px;
+
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.19);
+}
+
+.genreTitle {
+  font-size: 35px;
+}
+
+.genreVideos {
+  display: flex;
+  justify-content: center; /* Центрирует видео внутри жанрового блока */
+
+  gap: 1rem;
+  padding-bottom: 1rem;
+  list-style: none;
+  overflow-x: auto;
+  padding: 0 50px;
+}
+
+.genreVideos::-webkit-scrollbar {
+  height: 8px;
+}
+
+.genreVideos::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.genreVideos::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/*
+.animeCard {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+}
+*/
+
+.animeImage {
+  width: 100%;
+  height: 170px;
+  width: 120px;
+}
+
+.cardBottom {
+  margin-top: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.genreDescription {
+  font-size: 19px;
+  color: #777; /* Светло-серый текст */
+  /*margin-bottom: 1rem;*/
+  font-family: "Caveat";
+}
+
+.title_genre{
+  text-align: left;
+  margin-left: 50px;
+}
+
+
+@media (min-width: 1920px) {
+  .animeImage {
+    width: 100%;
+    height: 340px;
+    width: 240px;
+  }
+  .genreBlock {
+    width: 100%;
+    max-width: 1700px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .animeImage {
+    width: 100%;
+    height: 306px;
+    width: 216px;
+  }
+
+  .genreBlock {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 400px) {
+  .animeImage {
+    width: 100%;
+    height: 200px;
+    width: 150px;
+  }
+
+  .genreBlock {
+    width: 100%;
+    max-width: 300px; /* Ограничивает ширину каждого блока */
+
+  }
+
+}
